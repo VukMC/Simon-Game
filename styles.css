@@ -1,0 +1,138 @@
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding-top: 5rem;
+    font-size: 5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Honk", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+}
+
+_::-webkit-full-page-media, _:future, :root .safari_only {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0,
+        "XELA" 0,
+        "YELA" 0;
+    color: red;
+    font-size: 3rem;
+}
+
+button {
+    all: unset;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-rows: max(200px) max(200px);
+    grid-template-columns: max(200px) max(200px);
+    gap: 20px;
+}
+
+html {
+    background-color: #001a52;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.green {
+    background-color: green;
+    border: 5px solid black;
+    border-radius: 10%;
+}
+
+.red {
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 10%;
+}
+
+.yellow {
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 10%;
+}
+
+.blue {
+    background-color: blue;
+    border: 5px solid black;
+    border-radius: 10%;
+}
+
+.c {
+    background-color: rgba(255, 255, 255, 0.798);
+    border-color: rgba(255, 255, 255, 0.632);
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.game-over {
+    background-color: rgba(255, 0, 0, 0.659);
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-rows: max(160px) max(160px);
+        grid-template-columns: max(160px) max(160px);
+        gap: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0px;
+        padding-top: 3rem;
+        font-size: 4rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-rows: max(140px) max(140px);
+        grid-template-columns: max(140px) max(140px);
+        gap: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0px;
+        padding-top: 2rem;
+        font-size: 3rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
